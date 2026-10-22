@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" width="200" height="250" fill="none">
+  <defs>
+    <linearGradient id="mHair" x1="66" y1="34" x2="142" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D3C5EE"/>
+      <stop offset=".55" stop-color="#B094DA"/>
+      <stop offset="1" stop-color="#866AB3"/>
+    </linearGradient>
+    <linearGradient id="mHairBack" x1="72" y1="44" x2="128" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B9A3E0"/>
+      <stop offset="1" stop-color="#8B71BA"/>
+    </linearGradient>
+    <linearGradient id="mSkin" x1="100" y1="62" x2="100" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFEFE1"/>
+      <stop offset="1" stop-color="#FFD9C3"/>
+    </linearGradient>
+    <linearGradient id="mJacket" x1="48" y1="160" x2="152" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4C506E"/>
+      <stop offset="1" stop-color="#292C40"/>
+    </linearGradient>
+    <linearGradient id="mShirt" x1="100" y1="156" x2="100" y2="212" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E9ECF7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. 身体 -->
+  <path d="M100 151c-27 0-49 15-60 36-8 16-12 39-13 63h146c-1-24-5-47-13-63-11-21-33-36-60-36Z" fill="url(#mJacket)"/>
+  <path d="M83 156l17 24 17-24c7 1 13 4 18 9l-35 37-35-37c5-5 11-8 18-9Z" fill="url(#mShirt)"/>
+  <path d="M83 156l17 24 17-24" stroke="#1C1F30" stroke-width="3" stroke-linejoin="round" opacity=".5"/>
+  <path d="M100 180l-5.5 8 5.5 32 5.5-32-5.5-8Z" fill="#3F9E71"/>
+  <path d="M62 201l10-4 4.5 8-10.5 4-4-8Z" fill="#8E6FC2" opacity=".85"/>
+  <path d="M140 213c-1 9-3 17-5 23" stroke="#1C1F30" stroke-width="2" opacity=".32"/>
+  <path d="M56 232c-1-9-3-17-6-23" stroke="#1C1F30" stroke-width="2" opacity=".22"/>
+
+  <!-- 2. 脖子 -->
+  <path d="M91 130h18v23c0 5-4 8-9 8s-9-3-9-8v-23Z" fill="#F1C2A8"/>
+  <path d="M91 130h18v9c-5 4-13 4-18 0v-9Z" fill="#E2AE95"/>
+
+  <!-- 3. 后发（先画，避免遮脸） -->
+  <path d="M100 40c-27 0-46 20-46 46 0 10 1 19 3 26l-5 13c5-2 9-5 11-9l2 9 5-7 2 9 5-9 3 8 4-9 4 8 5-9 3 9 5-8 3 8 4-10c4 3 8 6 11 8l-5-15c2-7 3-16 3-26 0-26-19-46-46-46Z" fill="url(#mHairBack)"/>
+
+  <!-- 4. 耳朵 / 脸 -->
+  <ellipse cx="63" cy="108" rx="6.5" ry="9.5" fill="#FFDCC5"/>
+  <ellipse cx="137" cy="108" rx="6.5" ry="9.5" fill="#FFDCC5"/>
+  <ellipse cx="100" cy="104" rx="37" ry="42" fill="url(#mSkin)"/>
+  <path d="M100 144c-11 0-20-5-25-14 6 4 15 6 25 6s19-2 25-6c-5 9-14 14-25 14Z" fill="#FFCDB7" opacity=".45"/>
+
+  <!-- 5. 刘海（三束柔和弧线） -->
+  <path d="M62 96c-3-29 15-51 38-51s41 22 38 51c-4-14-10-24-17-29-3 9-8 15-14 18 2-8 1-15-2-20-5 8-11 13-19 16 1-6-1-11-4-15-5 8-11 13-18 16-1 5-2 9-2 14Z" fill="url(#mHair)"/>
+  <path d="M69 76c4-13 12-22 24-26-8 7-13 16-16 29l-8-3Z" fill="#E4DAF6" opacity=".55"/>
+  <path d="M128 62c6 6 9 15 10 27l-7 3c-1-12-2-22-3-30Z" fill="#E4DAF6" opacity=".28"/>
+  <!-- 鬓角 -->
+  <path d="M63 96c-2 8-2 16 1 23l6-2c-3-7-4-14-3-20l-4-1Z" fill="url(#mHairBack)"/>
+  <path d="M137 96c2 8 2 16-1 23l-6-2c3-7 4-14 3-20l4-1Z" fill="url(#mHairBack)"/>
+
+  <!-- 6. 眉毛 -->
+  <path d="M76 88c5-2.6 12-2.6 16 .6" stroke="#6E5A93" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M108 88.6c4-3.2 11-3.2 16-.6" stroke="#6E5A93" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- 7. 眼睛 -->
+  <g>
+    <ellipse cx="85" cy="103" rx="4.6" ry="5.6" fill="#3A3450"/>
+    <circle cx="83.6" cy="101" r="1.5" fill="#fff" opacity=".92"/>
+    <ellipse cx="115" cy="103" rx="4.6" ry="5.6" fill="#3A3450"/>
+    <circle cx="113.6" cy="101" r="1.5" fill="#fff" opacity=".92"/>
+    <path d="M77 96.4c2.6-2 6.6-2 9 .2" stroke="#5B4A7C" stroke-width="1.9" stroke-linecap="round"/>
+    <path d="M114 96.6c2.4-2.2 6.4-2.2 9 0" stroke="#5B4A7C" stroke-width="1.9" stroke-linecap="round"/>
+  </g>
+
+  <!-- 8. 眼镜 -->
+  <g stroke="#413B54" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="73" y="94.5" width="26" height="18" rx="7"/>
+    <rect x="101" y="94.5" width="26" height="18" rx="7"/>
+    <path d="M99 101h2"/>
+    <path d="M73 99.6l-9-2.6"/>
+    <path d="M127 99.6l9-2.6"/>
+  </g>
+  <path d="M76 97.8c3.4-1.2 13-1.4 18 .6" stroke="#fff" stroke-width="1.8" opacity=".5" stroke-linecap="round"/>
+
+  <!-- 9. 鼻子 / 嘴 -->
+  <path d="M100 111.6v5.4" stroke="#E4A387" stroke-width="1.9" stroke-linecap="round"/>
+  <path d="M93 125c4 4 11 4 15 0" stroke="#C0655C" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M100 130.6c-1.6 0-2.6.8-2.6 1.8" stroke="#C77C72" stroke-width="1.5" stroke-linecap="round" opacity=".45"/>
+
+  <!-- 10. 耳钉 / 光点 -->
+  <circle cx="137" cy="116" r="2.2" fill="#C9B8EB"/>
+  <path d="M160 76l1.7 4 4 1.7-4 1.7-1.7 4-1.7-4-4-1.7 4-1.7 1.7-4Z" fill="#BBA3EA"/>
+  <path d="M42 126l1.3 3.1 3.1 1.3-3.1 1.3-1.3 3.1-1.3-3.1-3.1-1.3 3.1-1.3 1.3-3.1Z" fill="#9FE0BC"/>
+</svg>

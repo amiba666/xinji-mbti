@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="theme-color" content="#f6f7f6">
+<meta name="description" content="心迹测评 · 专业心理测评平台。MBTI 人格测试、十六型人格图鉴、爱情与职业倾向分析，帮你更懂自己。">
+<meta name="format-detection" content="telephone=no">
+<title>心迹测评 · 专业心理测评</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/entry.css">
+<link rel="stylesheet" href="css/exam.css">
+<link rel="stylesheet" href="css/report.css">
+<link rel="stylesheet" href="css/misc.css">
+</head>
+<body data-theme="platform">
+  <div class="stage" aria-hidden="true">
+    <span class="stage__blob stage__blob--a"></span>
+    <span class="stage__blob stage__blob--b"></span>
+    <span class="stage__blob stage__blob--c"></span>
+    <span class="stage__grid"></span>
+  </div>
+
+  <div id="app" class="app">
+    <div class="device" id="device">
+      <main id="page-root" class="page-root" role="main"></main>
+      <nav id="tabbar" class="tabbar" aria-label="主导航" hidden></nav>
+    </div>
+  </div>
+
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+  <div id="modal-root" class="modal-root" aria-live="assertive"></div>
+
+  <noscript>
+    <div style="padding:40px 24px;font-family:system-ui;text-align:center;color:#1d2b24">
+      本页面需要启用 JavaScript 才能使用，请在浏览器设置中开启后刷新。
+    </div>
+  </noscript>
+
+  <script src="js/data/products.js"></script>
+  <script src="js/data/questions.js"></script>
+  <script src="js/data/types.js"></script>
+  <script src="js/core/store.js"></script>
+  <script src="js/core/ui.js"></script>
+  <script src="js/core/router.js"></script>
+  <script src="js/core/charts.js" onerror="window.Charts=window.Charts||{}"></script>
+  <script>window.Pages = window.Pages || {};</script>
+  <script src="js/pages/entry.js"></script>
+  <script src="js/pages/exam.js"></script>
+  <script src="js/pages/analyzing.js"></script>
+  <script src="js/pages/paywall.js"></script>
+  <script src="js/pages/report.js"></script>
+  <script src="js/pages/type-detail.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/category.js"></script>
+  <script src="js/pages/detail.js"></script>
+  <script src="js/pages/search.js"></script>
+  <script src="js/pages/mine.js"></script>
+  <script src="js/pages/vip.js"></script>
+  <script src="js/pages/doc.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
